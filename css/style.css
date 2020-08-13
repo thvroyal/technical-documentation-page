@@ -8,6 +8,8 @@
     border-right: 2px solid #333;
     height: 100vh;
     overflow-y: auto;
+    position: fixed;
+    left: 0;
 }
 .sidebar .header-ml {
     padding: 1rem;
@@ -17,4 +19,28 @@
     z-index: 1111;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
+}
+.content-doc {
+    padding-left: .5rem;
+    margin-top: 1rem;
+}
+.content-doc h2::before {
+    content: "# ";
+    color: #999;
+    font-size: 2rem;
+}
+.content-doc p,code {
+    padding-left: 3rem; 
+}
+.content-doc ul {
+    padding-left: 6rem;
+}
+.content-doc code {
+    background-color: #e0e0e0;
+    display: block;
+    margin-left: 3rem;
+    margin-right: 4rem;
+    margin-bottom: .7rem;
+    padding: 20px 20px;
+    border-radius: .3rem;
 }
